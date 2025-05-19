@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tfijl0dzy-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tfijl0dzy-java-springboot 
+  name: tfijl0dzy-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: tfijl0dzy-java-springboot 
